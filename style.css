@@ -43,7 +43,7 @@
     position: absolute;
     width: 312px;
     height: 415px;
-    background-color:rgb(236 234 234);;
+    background-color:rgb(238 238 238);;
     border-radius: 15px;
     padding: 0.8rem;
   }
@@ -62,7 +62,7 @@
     border: 0px solid;
     
     box-shadow: 0 6px 10px rgb(215 209 209);
-    background-color: rgb(226 226 226);
+    background-color: rgb(222 222 222);
   }
   .password input {
     padding: 0.6rem 0.5rem 0.6rem 0.5rem;
