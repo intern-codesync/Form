@@ -60,7 +60,8 @@
     margin-bottom: 1.5rem;
     border-radius: 10px;
     border: 0px solid;
-    box-shadow: 0 2px 5px rgb(165, 164, 164);
+    
+    box-shadow: 0 6px 10px rgb(215 209 209);
     background-color: rgb(226 226 226);
   }
   .password input {
@@ -82,7 +83,7 @@
   .checkbox label{
       position: absolute;
       left: 7%;
-      font-size: 13px;
+      font-size: 12px;
   }
   .checkbox input{
     width: 15px;
@@ -91,7 +92,7 @@
 
 .paswd-link a:link{
     color: #605e5e;
-    font-size: 13px ;
+    font-size: 12px ;
 }
   .login-button button {
     padding: 0.8rem 0.5rem 0.8rem 0.5rem;
@@ -158,5 +159,6 @@
     font-size: 13px;
   }
   .account a:link{
+  color: rgb(39, 114, 255);
     text-decoration: none;
   }
