@@ -1,164 +1,189 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    font-family:sans-serif; 
-  }
-  
-  .main-box {
-    width: 425px;
-    height: 425px;
-    /* background-color: lightgray; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-  }
-  
-  .rotated-box-blue {
-    width: 312px;
-    height: 415px;
-    background-color: rgb(85 139 240);
-    transform: rotate(-6deg);
-    border-radius: 25px;
-    position: absolute;
-  }
-  
-  .rotated-box-red {
-    transform: rotate(5deg);
-    position: absolute;
-    width: 312px;
-    height: 415px;
-    background-color: rgb(255 110 84);
-    border-radius: 25px;
-  }
-  .form-box{
-    position: absolute;
-    width: 312px;
-    height: 415px;
-    background-color:rgb(238 238 238);;
-    border-radius: 15px;
-    padding: 0.8rem;
-  }
-  .login{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-bottom: 2rem;
-    font-size: 13px;
-  }
-  .email input {
-    padding: 0.6rem 0.5rem 0.6rem 0.5rem;
-    width: 100%;
-    margin-bottom: 1.5rem;
-    border-radius: 10px;
-    border: 0px solid;
-    
-    box-shadow: 0 6px 10px rgb(215 209 209);
-    background-color: rgb(222 222 222);
-  }
-  .password input {
-    padding: 0.6rem 0.5rem 0.6rem 0.5rem;
-    width: 100%;
-    margin-bottom: 1.5rem;
-    border-radius: 10px;
-    border: 0px solid;
-    background: #ededed;
-    box-shadow: 0px 6px 10px rgb(213 213 213);
-  }
-  .checkbox {
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    position: relative;
-    margin-bottom: 1.5rem;
-  }
-  .checkbox label{
-      position: absolute;
-      left: 7%;
-      font-size: 12px;
-  }
-  .checkbox input{
-    width: 15px;
-    height: 15px;
-  }
-
-.paswd-link a:link{
-    color: #605e5e;
-    font-size: 12px ;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 619px;
 }
-  .login-button button {
-    padding: 0.8rem 0.5rem 0.8rem 0.5rem;
-    width: 100%;
-    margin-bottom: 1.5rem;
-    background-color: rgb(39, 114, 255);
-    color: white;
-    border: 0px solid;
-    border-radius: 10px;
-    box-shadow: 0px 0px 1px;
-  }
-  .login-option {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-bottom: 1.5rem;
-    font-size: 13px;
-  }
-  .login-option::after {
-    content: " ";
-    position: absolute;
-    width: 35%;
-    height: 1px;
-    background-color: #d6d3d3;
-    left: 0%;
-    top: 48%;
-  }
-  .login-option::before {
-    content: " ";
-    position: absolute;
-    width: 35%;
-    height: 1px;
-    background-color: #d6d3d3;
-    right: 0;
-    top: 48%;
-  }
-  .fb-button button {
-    padding: 0.6rem 0.7rem 0.6rem 0.7rem;
-    background-color: rgb(39, 114, 255);
-    border: 0px solid;
-    border-radius: 10px;
-    color: white;
-  }
-  .google-button button {
-    padding: 0.6rem 0.7rem 0.6rem 0.7rem;
-    background-color: rgb(255 66 66);
-    border: 0px solid;
-    border-radius: 10px;
+
+.main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-box::after ,.main-box::before{
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 438px;
+  background-color: rgb(85 139 240);
+  border-radius: 25px;
+  transform: rotate(-6deg);
+  z-index: 1;
+}
+.main-box::before {
+  /* content: "";
+  position: absolute;
+  width: 320px;
+  height: 438px;
+  border-radius: 25px; */
+  transform: rotate(5deg);
+  background-color: rgb(255 110 84);
+  z-index: 2;
+}
+.form-box {
+  width: 320px;
+  background-color: rgb(238 238 238);
+  border-radius: 15px;
+  padding: 1.5rem;
+  z-index: 3;
+}
+.login {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 2rem;
+  font-size: 13px;
+  cursor: pointer;
+}
+.email input {
+  padding: 0.6rem 0.5rem 0.6rem 0.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  border: 0px solid;
+  box-shadow: 0 6px 10px rgb(215 209 209);
+  background-color: rgb(222 222 222);
+}
+.password input {
+  padding: 0.6rem 0.5rem 0.6rem 0.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  border: 0px solid;
+  background: #ededed;
+  box-shadow: 0px 6px 10px rgb(213 213 213);
+}
+.checkbox {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.checkbox label {
+  position: absolute;
+  left: 7%;
+  font-size: 12px;
+}
+.checkbox input {
+  width: 15px;
+  height: 15px;
+}
+
+.paswd-link a:link {
+  color: #605e5e;
+  font-size: 12px;
+}
+.login-button button {
+  padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background-color: rgb(39, 114, 255);
   color: white;
-  }
-  .button{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 4%;
-      margin-bottom: 2rem;
-  } 
-  .account{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-    font-size: 13px;
-  }
-  .account a:link{
+  border: 0px solid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px;
+}
+.login-option {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 1.5rem;
+  font-size: 13px;
+  cursor: pointer;
+}
+.login-option::after {
+  content: " ";
+  position: absolute;
+  width: 35%;
+  height: 1px;
+  background-color: #d6d3d3;
+  left: 0%;
+  top: 48%;
+}
+.login-option::before {
+  content: " ";
+  position: absolute;
+  width: 35%;
+  height: 1px;
+  background-color: #d6d3d3;
+  right: 0;
+  top: 48%;
+}
+.fb-button button {
+  padding: 0.6rem 0.7rem 0.6rem 0.7rem;
+  background-color: rgb(39, 114, 255);
+  border: 0px solid;
+  border-radius: 10px;
+  color: white;
+}
+.google-button button {
+  padding: 0.6rem 0.7rem 0.6rem 0.7rem;
+  background-color: rgb(255 66 66);
+  border: 0px solid;
+  border-radius: 10px;
+  color: white;
+
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6%;
+  margin-bottom: 2rem;
+
+}
+.account {
+  color: #605e5e;
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  align-items: center;
+  font-size: 13px;
+
+  cursor: pointer;
+}
+.account a:link {
   color: rgb(39, 114, 255);
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
+
+
+.absolute__child{
+  position: absolute;
+  top: 0;
+}
+.relative{
+  position: relative;
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box__2{
+  /* width: 100%;
+  max-width: 420px;
+  min-width: 320px;
+  background-color: red;
+  min-height: 200px; */
+}
